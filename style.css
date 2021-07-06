@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url(fonts/TTLakes-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url(fonts/TTLakes-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url(fonts/TTLakes-Medium.woff) format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "TT Lakes Regular";
+  background-color: #f8f8f8;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9fff5;
+}
+
+.header--margin {
+  margin-bottom: 24px;
+}
+
+.header__container {
+  height: 88px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 41px;
+  background-color: #41f6d7;
+  border-radius: 0 5px 5px 0;
+}
+
+.main__title {
+  font-family: "TT Lakes Bold";
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.nav--padding {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.nav__item {
+  color: #7e7e82;
+}
+
+@media screen and (max-width: 320px) {
+  /* .header__repair::before {
+    content: "";
+    position: absolute;
+  
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px;
+  } */
+
+  .container {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+
+  .description__text {
+    margin-bottom: 16px;
+  }
+
+  .description__button {
+    margin: 0 0 24px 8px;
+    border: none;
+    background: none;
+  }
+
+  .button__name {
+    font-size: 1rem;
+    margin-left: 16px;
+  }
+
+  .main__img {
+    max-width: 320px;
+  }
+
+  .main__img img {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
