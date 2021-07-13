@@ -11,46 +11,94 @@
   <body>
     <header class="header header--margin">
       <div class="header__container container">
-        <div class="header__burger">
-          <img src="img/header/burger.svg" alt="menu burger" />
-        </div>
-        <div class="header__logo">
-          <img src="img/header/logo.svg" alt="logo" />
-        </div>
+        <img
+          class="header__burger"
+          src="img/header/burger.svg"
+          alt="menu burger"
+        />
 
-        <div class="header__repair">
-          <img src="img/header/repair.svg" alt="menu repair" />
-        </div>
-        <div class="header__checkstatus">
-          <img src="img/header/checkstatus.svg" alt="checkstatus" />
-        </div>
+        <hr class="header__hr header__hr--none" />
+
+        <img class="header__logo" src="img/header/logo.svg" alt="logo" />
+
+        <div class="header__block"></div>
+
+        <img class="header__call" src="img/header/call.svg" alt="call" />
+
+        <img class="header__chat" src="img/header/chat.svg" alt="chat" />
+
+        <img
+          class="header__profile"
+          src="img/header/profile.svg"
+          alt="profile"
+        />
+
+        <hr class="header__hr header__hr--none" />
+
+        <img class="header__repair" src="img/header/repair.svg" alt="repair" />
+
+        <img
+          class="header__checkstatus"
+          src="img/header/checkstatus.svg"
+          alt="checkstatus"
+        />
       </div>
     </header>
 
     <main class="main">
       <div class="container">
-        <h1 class="main__title">Услуги и сервисы</h1>
+        <div class="main__header">
+          <h1 class="main__title">Услуги и сервисы</h1>
+          <div class="main__icons">
+            <span>Оставить заявку</span>
+            <img
+              class="header__repair"
+              src="img/header/repair.svg"
+              alt="repair"
+            />
+            <span>Статус ремонта</span>
+            <img
+              class="header__checkstatus"
+              src="img/header/checkstatus.svg"
+              alt="checkstatus"
+            />
+          </div>
+        </div>
 
         <nav class="nav nav--padding">
           <span class="nav__item">Ремонтируемые устройства</span>
         </nav>
+      </div>
 
-        <article class="description">
-          <p class="description__text">
+      <div class="content content--flex">
+        <div class="container">
+          <p class="content__text">
             Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.
           </p>
 
-          <button class="description__button button">
-            <img class="button__icon" src="/img/main/icon.svg" alt="icon" />
+          <p class="content__text">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера
+          </p>
+
+          <p class="content__text">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+
+          <button class="content__button button">
+            <img src="img/main/icon.svg" alt="icon" />
             <span class="button__name">Читать далее</span>
           </button>
-        </article>
-      </div>
+        </div>
 
-      <div class="main__img">
-        <img src="img/main/main.jpg" alt="" />
+        <div class="content__img">
+          <img src="img/main/main.jpg" alt="" />
+        </div>
       </div>
     </main>
   </body>
