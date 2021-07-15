@@ -63,18 +63,13 @@ body {
   align-items: center;
 }
 
-.header__call,
-.header__chat,
-.header__profile,
+.header__button--call,
+.header__button--chat,
+.header__button--profile,
 .header__block,
 .content__text:nth-child(2) {
   display: none;
 }
-
-
-/* .header__repair {
-  margin-right: 2rem;
-} */
 
 .main__header {
   display: flex;
@@ -96,6 +91,11 @@ body {
   font-family: "TT Lakes Bold";
   font-size: 1.8rem;
 }
+
+
+
+
+/*    --------------------------------  */
 
 .main__buttons {
   display: flex;
@@ -119,9 +119,10 @@ body {
 }
 
 .header__button {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 50%;
+  background: #FF3E79;
 }
 
 .header__button--repair {
@@ -132,6 +133,28 @@ body {
 .header__button--checkstatus {
   background-image: url("/img/header/checkstatus.svg");
 }
+
+.header__button--burger {
+  background-image: url("/img/header/burger.svg");
+}
+
+.header__button--call {
+  background-image: url("/img/header/call.svg");
+}
+
+.header__button--chat {
+  background-image: url("/img/header/chat.svg");
+}
+
+.header__button--profile {
+  background-image: url("/img/header/profile.svg");
+}
+
+
+/*    --------------------------------  */
+
+
+
 
 .nav--flex {
   display: flex;
@@ -224,12 +247,26 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 321px) {
+/* @media screen and (max-width: 500px)  and (min-width: 321px) {
+  .header__block {
+    display: none;
+  }
+
   .header,
-  .header__block,
   .header__call,
   .header__chat,
   .header__profile,
+  .content__text:nth-child(2) {
+    display: block;
+  }
+} */
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .header,
+  .header__block,
+  .header__button--call,
+  .header__button--chat,
+  .header__button--profile,
   .content__text:nth-child(2) {
     display: block;
   }
