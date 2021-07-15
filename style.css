@@ -72,9 +72,9 @@ body {
 }
 
 
-.header__repair {
+/* .header__repair {
   margin-right: 2rem;
-}
+} */
 
 .main__header {
   display: flex;
@@ -110,6 +110,27 @@ body {
 
 .main__buttons img {
   width: 40px;
+}
+
+.button {
+  border: none; 
+  outline: none;
+  cursor: pointer;
+}
+
+.header__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header__button--repair {
+  margin-right: 2rem;
+  background-image: url("/img/header/repair.svg");
+}
+
+.header__button--checkstatus {
+  background-image: url("/img/header/checkstatus.svg");
 }
 
 .nav--flex {
@@ -180,7 +201,7 @@ body {
     display: none;
   }
 
-  .header__repair {
+  .header__button--repair {
     margin-right: 0;
   }
 
@@ -229,7 +250,7 @@ body {
     border-radius: 1px;
   }
 
-  .header__repair {
+  .header__button--repair {
     margin-right: 0;
   }
 
