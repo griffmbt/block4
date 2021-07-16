@@ -200,6 +200,16 @@ a:visited {
   height: 0;
 }
 
+.nav::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 30px;
+  background-color: #F2F2F2;
+  filter: blur(10px);
+}
+
 .nav__item {
   margin-right: 0.8rem;
   padding: 8px 16px;
