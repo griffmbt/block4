@@ -89,6 +89,7 @@ a:visited {
 .header__button--call,
 .header__button--chat,
 .header__button--profile,
+.header__logo,
 .header__status .header__button--repair {
   margin-right: 1rem;
 }
@@ -105,7 +106,6 @@ a:visited {
 .header__button--call,
 .header__button--chat,
 .header__button--profile,
-.header__block,
 .content__text:nth-child(2) {
   display: none;
 }
@@ -185,10 +185,19 @@ a:visited {
 }
 
 .nav--flex {
+  margin-bottom: 24px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nav--flex::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .nav__item {
@@ -274,7 +283,6 @@ a:visited {
 
   .nav--flex {
     flex-wrap: nowrap;
-    overflow: hidden;
   }
 
   .content--flex {
@@ -323,12 +331,7 @@ a:visited {
     flex-direction: row;
   }
 
-  .header__block {
-    width: 20%;
-  }
-
   .nav--flex {
     flex-wrap: nowrap;
-    overflow: hidden;
   }
 }
