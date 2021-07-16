@@ -12,12 +12,13 @@
     <div class="page">
       <header class="header header--margin">
         <div class="header__container container">
-          
           <button class="button header__button header__button--burger"></button>
 
           <hr class="header__hr header__hr--none" />
 
-          <img class="header__logo" src="img/header/logo.svg" alt="logo" />
+          <a href="">
+            <img class="header__logo" src="img/header/logo.svg" alt="logo" />
+          </a>
 
           <div class="header__block"></div>
 
@@ -25,14 +26,17 @@
 
           <button class="button header__button header__button--chat"></button>
 
-          <button class="button header__button header__button--profile"></button>
+          <button
+            class="button header__button header__button--profile"
+          ></button>
 
           <hr class="header__hr header__hr--none" />
 
           <button class="button header__button header__button--repair"></button>
 
-          <button class="button header__button header__button--checkstatus"></button>
-
+          <button
+            class="button header__button header__button--checkstatus"
+          ></button>
         </div>
       </header>
 
@@ -42,25 +46,27 @@
             <h1 class="main__title">Услуги и сервисы</h1>
 
             <div class="main__buttons">
-
               <p>Оставить заявку</p>
 
-              <button class="button header__button header__button--repair"></button>
+              <button
+                class="button header__button header__button--repair"
+              ></button>
 
               <p>Статус ремонта</p>
 
-              <button class="button header__button header__button--checkstatus"></button>
-
+              <button
+                class="button header__button header__button--checkstatus"
+              ></button>
             </div>
           </header>
 
           <nav class="nav nav--flex">
-            <p class="nav__item">Ремонтируемые устройства</p>
-            <p class="nav__item">Дополнительные услуги</p>
-            <p class="nav__item">Цены на услуги</p>
-            <p class="nav__item">Адреса сервисных центров</p>
-            <p class="nav__item">Специальные цены</p>
-            <p class="nav__item">Отзывы</p>
+            <p class="nav__item"><a href="#">Ремонтируемые устройства</a></p>
+            <p class="nav__item"><a href="#">Дополнительные услуги</a></p>
+            <p class="nav__item"><a href="#">Цены на услуги</a></p>
+            <p class="nav__item"><a href="#">Адреса сервисных центров</a></p>
+            <p class="nav__item"><a href="#">Специальные цены</a></p>
+            <p class="nav__item"><a href="#">Отзывы</a></p>
           </nav>
         </div>
 
@@ -85,13 +91,12 @@
             </p>
 
             <button class="content__button button">
-              <img src="img/main/icon.svg" alt="icon" />
               <span class="button__name">Читать далее</span>
             </button>
           </div>
 
           <div class="content__img">
-            <img src="img/main/main.jpg" alt="" />
+            <img src="img/main/main.jpg" alt="company photo" />
           </div>
         </div>
       </main>

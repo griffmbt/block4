@@ -25,12 +25,20 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: "TT Lakes Regular";
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7e7e82;
 }
 
 .page {
@@ -92,11 +100,6 @@ body {
   font-size: 1.8rem;
 }
 
-
-
-
-/*    --------------------------------  */
-
 .main__buttons {
   display: flex;
   flex-direction: row;
@@ -113,7 +116,7 @@ body {
 }
 
 .button {
-  border: none; 
+  border: none;
   outline: none;
   cursor: pointer;
 }
@@ -122,39 +125,33 @@ body {
   min-width: 40px;
   min-height: 40px;
   border-radius: 50%;
-  background: #FF3E79;
+  background: #ff3e79;
 }
 
 .header__button--repair {
   margin-right: 2rem;
-  background-image: url("/img/header/repair.svg");
+  background-image: url("./img/header/repair.svg");
 }
 
 .header__button--checkstatus {
-  background-image: url("/img/header/checkstatus.svg");
+  background-image: url("./img/header/checkstatus.svg");
 }
 
 .header__button--burger {
-  background-image: url("/img/header/burger.svg");
+  background-image: url("./img/header/burger.svg");
 }
 
 .header__button--call {
-  background-image: url("/img/header/call.svg");
+  background-image: url("./img/header/call.svg");
 }
 
 .header__button--chat {
-  background-image: url("/img/header/chat.svg");
+  background-image: url("./img/header/chat.svg");
 }
 
 .header__button--profile {
-  background-image: url("/img/header/profile.svg");
+  background-image: url("./img/header/profile.svg");
 }
-
-
-/*    --------------------------------  */
-
-
-
 
 .nav--flex {
   display: flex;
@@ -194,8 +191,12 @@ body {
 
 .content__button {
   margin: 0 0 24px 8px;
-  border: none;
   background: none;
+}
+
+.content__button::before {
+  content: url(./img/main/icon.svg);
+
 }
 
 .button__name {
@@ -220,7 +221,9 @@ body {
     padding-top: 0;
   }
 
-  .main__buttons, .content__text:nth-child(2), .content__text:nth-child(3) {
+  .main__buttons,
+  .content__text:nth-child(2),
+  .content__text:nth-child(3) {
     display: none;
   }
 
@@ -238,7 +241,7 @@ body {
 
   .nav--flex {
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow: hidden;
   }
 
   .content--flex {
@@ -246,20 +249,6 @@ body {
     display: block;
   }
 }
-
-/* @media screen and (max-width: 500px)  and (min-width: 321px) {
-  .header__block {
-    display: none;
-  }
-
-  .header,
-  .header__call,
-  .header__chat,
-  .header__profile,
-  .content__text:nth-child(2) {
-    display: block;
-  }
-} */
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
   .header,
@@ -275,7 +264,8 @@ body {
     padding-top: 0;
   }
 
-  .main__buttons, .content__text:nth-child(3) {
+  .main__buttons,
+  .content__text:nth-child(3) {
     display: none;
   }
 
@@ -307,4 +297,3 @@ body {
     overflow: scroll;
   }
 }
-
