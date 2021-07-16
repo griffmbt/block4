@@ -37,7 +37,7 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+a:link, a:visited {
   color: #7e7e82;
 }
 
@@ -294,6 +294,6 @@ a:visited {
 
   .nav--flex {
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow: hidden;
   }
 }
