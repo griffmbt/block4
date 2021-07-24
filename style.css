@@ -37,20 +37,20 @@ a {
   text-decoration: none;
 }
 
-a:link,
-a:visited {
+.nav__item a:link,
+.nav__item a:visited {
   color: #7e7e82;
 }
 
-.page {
+.page4 {
   margin: 0 auto;
   padding: 42px 0 0 0;
+  max-width: 1120px;
   background-color: #f8f8f8;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1120px;
   width: 90%;
 }
 
@@ -112,6 +112,7 @@ a:visited {
 
 .main__header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   margin: 0 0 20px 0;
 }
@@ -119,7 +120,7 @@ a:visited {
 .main__title::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -56px;
   width: 4px;
   height: 40px;
   background-color: #41f6d7;
@@ -160,7 +161,6 @@ a:visited {
 }
 
 .header__button--repair {
-  margin-right: 2rem;
   background-image: url("./img/header/repair.svg");
 }
 
@@ -184,6 +184,26 @@ a:visited {
   background-image: url("./img/header/profile.svg");
 }
 
+.main__button {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "TT Lakes Medium";
+  background: none;
+}
+
+.main__button--repair {
+  margin-right: 2rem;
+}
+
+.main__button--repair::after {
+  content: url(./img/header/repair.svg);
+}
+
+.main__button--checkstatus::after {
+  content: url(./img/header/checkstatus.svg);
+}
+
 .nav--flex {
   margin-bottom: 24px;
   display: flex;
@@ -204,14 +224,14 @@ a:visited {
   content: "";
   position: absolute;
   right: 0;
-  width: 40px;
+  width: 60px;
   height: 30px;
   background-color: #F2F2F2;
   filter: blur(10px);
 }
 
 .nav__item {
-  margin-right: 0.8rem;
+  /* margin-right: 0.8rem; */
   padding: 8px 16px;
   color: #7e7e82;
   white-space: nowrap;
@@ -266,7 +286,7 @@ a:visited {
     display: block;
   }
 
-  .page {
+  .page4 {
     padding-top: 0;
   }
 
@@ -277,8 +297,12 @@ a:visited {
     display: none;
   }
 
-  .header__button--repair {
-    margin-right: 0;
+  .main__header {
+    position: static;
+  }
+  
+  .main__title::before {
+    left: 0;
   }
 
   .header__status .header__hr {
@@ -302,7 +326,7 @@ a:visited {
 }
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
-  .page {
+  .page4 {
     padding-top: 0;
   }
 
@@ -330,8 +354,12 @@ a:visited {
     border-radius: 1px;
   }
 
-  .header__button--repair {
-    margin-right: 0;
+  .main__header {
+    position: static;
+  }
+  
+  .main__title::before {
+    left: 0;
   }
 
   .content--flex {
