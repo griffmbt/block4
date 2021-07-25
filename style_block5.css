@@ -1,0 +1,105 @@
+.menu {
+  width: 320px;
+  height: 100%;
+  font-family: "TT Lakes Medium";
+  background-color: #ffffff;
+}
+
+.menu__container {
+  margin: 0 auto;
+  width: 85%;
+  height: 100%;
+}
+
+.menu__block {
+  width: 30px;
+}
+
+.menu__header {
+  height: 86px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button--burger-close {
+  background-image: url("./img/menu/burger-close.svg");
+}
+
+.button--search {
+  background-image: url("./img/menu/search.svg");
+}
+
+.menu__item {
+  margin-bottom: 32px;
+  color: #000000;
+  transition-duration: 300ms;
+  transition-property: opacity;
+}
+
+.menu__item a:link,
+.menu__item a:visited,
+.menu__footer a:link,
+.menu__footer a:visited {
+  color: #000000;
+}
+
+.menu__item:hover {
+  opacity: 0.5;
+}
+
+.menu__nav::before {
+  content: "";
+  position: absolute;
+  top: 105px;
+  left: 0;
+  width: 4px;
+  height: 40px;
+  background-color: #41f6d7;
+  border-radius: 0 5px 5px 0;
+}
+
+.menu__section {
+  max-height: 936px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu__buttons,
+.menu__email {
+  margin-bottom: 1rem;
+}
+
+.menu__tel {
+  font-family: "TT Lakes Bold";
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.button--call,
+.button--chat {
+  margin-right: 1rem;
+}
+
+.button--call {
+  background-image: url("./img/header/call.svg");
+}
+
+.button--chat {
+  background-image: url("./img/header/chat.svg");
+}
+
+.button--profile {
+  background-image: url("./img/header/profile.svg");
+}
+
+.button__language {
+  transition-duration: 400ms;
+}
+
+.button__language:hover {
+  opacity: 0.5;
+}
