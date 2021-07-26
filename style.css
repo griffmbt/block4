@@ -281,6 +281,10 @@ a {
   display: none;
 }
 
+.service__container {
+  margin-bottom: 50px;
+}
+
 .service__title {
   text-transform: uppercase;
   color: #7e7e82;
@@ -305,20 +309,54 @@ a {
   width: 240px;
   height: 72px;
   margin-bottom: 1rem;
-  padding: 0 1rem; 
+  padding: 0 1rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   border-radius: 6px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .brands__button::after {
   content: url(./img/main/go.svg);
 }
+
+.service__equipment {
+  padding: 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.equipment__button {
+  position: relative;
+  width: 240px;
+  height: 160px;
+  padding: 16px;
+  text-align: start;
+  vertical-align: top;
+
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+
+.equipment__button::after {
+  content: url(./img/main/go.svg);
+  position: absolute;
+  right: 17px;
+  bottom: 14px;
+}
+
+.equipment__button span {
+  position: relative;
+  top: -58px;
+}
+
+
 
 @media screen and (max-width: 320px) {
   .header {
