@@ -120,7 +120,7 @@ a {
 .main__title::before {
   content: "";
   position: absolute;
-  left: -56px;
+  left: -5.5%;
   width: 4px;
   height: 40px;
   background-color: #41f6d7;
