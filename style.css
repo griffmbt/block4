@@ -261,10 +261,10 @@ a {
 
 .content__button {
   margin: 0 0 24px 8px;
-  background: none;
 }
 
-.content__button::before {
+.content__button::before,
+.service__button::before {
   content: url(./img/main/icon.svg);
 }
 
@@ -290,8 +290,34 @@ a {
   min-height: 56px;
   display: flex;
   align-items: center;
-  border-top: 1px solid #D9FFF5;
-  background-image: linear-gradient(to right, #F8F8F8 20%, #FFFFFF 70%);
+  border-top: 1px solid #d9fff5;
+  background-image: linear-gradient(to right, #f8f8f8 20%, #ffffff 70%);
+}
+
+.service__brands {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brands__button {
+  width: 240px;
+  height: 72px;
+  margin-bottom: 1rem;
+  padding: 0 1rem; 
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background: #FFFFFF;
+}
+
+.brands__button::after {
+  content: url(./img/main/go.svg);
 }
 
 @media screen and (max-width: 320px) {
