@@ -366,6 +366,7 @@ a {
     padding-top: 0;
   }
 
+
   .main__buttons,
   .header__left .header__hr,
   .content__text:nth-child(2),
@@ -404,6 +405,12 @@ a {
 @media screen and (max-width: 768px) and (min-width: 321px) {
   .page4 {
     padding-top: 0;
+  }
+
+  .container,
+  .main__header {
+    margin: 0 auto;
+    width: 95%;
   }
 
   .header,
