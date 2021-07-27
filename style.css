@@ -49,7 +49,8 @@ a {
   background-color: #f8f8f8;
 }
 
-.container {
+.container,
+.main__header {
   margin: 0 auto;
   width: 90%;
 }
@@ -110,7 +111,7 @@ a {
   display: none;
 }
 
-.main__header {
+.main__container {
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -356,8 +357,6 @@ a {
   top: -58px;
 }
 
-
-
 @media screen and (max-width: 320px) {
   .header {
     display: block;
@@ -374,7 +373,7 @@ a {
     display: none;
   }
 
-  .main__header {
+  .main__container {
     position: static;
   }
 
@@ -431,7 +430,7 @@ a {
     border-radius: 1px;
   }
 
-  .main__header {
+  .main__container {
     position: static;
   }
 
