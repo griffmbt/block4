@@ -437,11 +437,11 @@ a {
     height: 140px;
   }
 
-  .swiper-container--height {
-    height: 280px;
+  .equipment__swiper-container {
+    height: 245px;
   }
 
-  .swiper-wrapper--position {
+  .equipment__swiper-wrapper {
     margin-top: -15px;
   }
 
@@ -467,7 +467,7 @@ a {
     align-items: center;
   }
 
-  .swiper-container::after {
+  .brands__swiper::after {
     content: "";
     position: absolute;
     right: 0;
@@ -477,6 +477,28 @@ a {
     background-color: #f8f8f8;
     filter: blur(10px);
     z-index: 2;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #dddddd !important;
+    border: 5px solid #cccccc;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #b5b6bc !important;
+  }
+
+  .equipment__swiper-container::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 50px;
+    height: 250px;
+    background-color: #f8f8f8;
+    filter: blur(8px);
+    z-index: 2;
+    transform: translateX(25px);
   }
 }
 
