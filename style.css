@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+.display-none {
+  display: none;
+}
+
 .nav__item a:link,
 .nav__item a:visited {
   color: #7e7e82;
@@ -264,14 +268,17 @@ a {
   margin: 0 0 24px 8px;
 }
 
-.content__button::before,
-.service__button::before {
+.content__button::before {
   content: url(./img/main/icon.svg);
 }
 
 .button__name {
   font-size: 1rem;
-  margin-left: 16px;
+  margin-left: 1rem;
+}
+
+.brands__img {
+  margin-left: 10px;
 }
 
 .content__img img {
@@ -326,7 +333,7 @@ a {
 }
 
 .service__equipment {
-  padding: 24px 0;
+  padding-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -336,6 +343,7 @@ a {
   position: relative;
   width: 240px;
   height: 160px;
+  margin-top: 1rem;
   padding: 16px;
   text-align: start;
   vertical-align: top;
@@ -357,6 +365,18 @@ a {
   top: -58px;
 }
 
+.swiper-container,
+.brands__display--none,
+.equipment__display--none {
+  display: none;
+}
+
+.equipment__display--none {
+  margin-top: 1rem;
+}
+
+
+
 @media screen and (max-width: 320px) {
   .header {
     display: block;
@@ -365,7 +385,6 @@ a {
   .page4 {
     padding-top: 0;
   }
-
 
   .main__buttons,
   .header__left .header__hr,
@@ -399,6 +418,45 @@ a {
   .content--flex {
     width: 100%;
     display: block;
+  }
+
+  .container--display {
+    display: none;
+  }
+
+  .swiper-container {
+    display: block;
+    width: 320px;
+    height: 140px;
+  }
+
+  .swiper-container--height {
+    height: 280px;
+  }
+
+  .swiper-wrapper--position {
+    margin-top: -15px;
+  }
+
+  .content__service .service__container:nth-child(2) {
+    transform: translateY(-40px);
+  }
+
+  .swiper-slide {
+    text-align: center;
+    background: #f8f8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 }
 
@@ -454,5 +512,17 @@ a {
 
   .nav--flex {
     flex-wrap: nowrap;
+  }
+
+  .service__equipment {
+    justify-content: flex-start;
+  }
+  
+  .equipment__button {
+    margin-right: 3px;
+  }
+
+  .display--block {
+    display: block;
   }
 }

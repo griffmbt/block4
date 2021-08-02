@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <title>block4</title>
   </head>
@@ -133,39 +134,104 @@
                 </div>
               </header>
 
-              <div class="container">
+              <div class="container container--display">
                 <div class="service__brands brands">
                   <button class="button brands__button">
                     <img src="./img/main/Bitmap-2.png" alt="lenovo" />
                   </button>
                   <button class="button brands__button">
-                    <img src="./img/main/Bitmap-3.png" alt="lenovo" />
+                    <img src="./img/main/Bitmap-3.png" alt="sumsung" />
                   </button>
                   <button class="button brands__button">
-                    <img src="./img/main/Bitmap-4.png" alt="lenovo" />
+                    <img src="./img/main/Bitmap-4.png" alt="apple" />
                   </button>
                   <button class="button brands__button">
-                    <img src="./img/main/Bitmap-5.png" alt="lenovo" />
+                    <img src="./img/main/Bitmap-5.png" alt="vs" />
                   </button>
 
                   <button class="button brands__button">
-                    <img src="./img/main/Bitmap.png" alt="lenovo" />
+                    <img src="./img/main/Bitmap.png" alt="bosch" />
                   </button>
                   <button class="button brands__button">
-                    <img src="./img/main/Bitmap-6.png" alt="lenovo" />
+                    <img src="./img/main/Bitmap-6.png" alt="hp" />
                   </button>
-                  <button class="button brands__button">
-                    <img src="./img/main/Bitmap-7.png" alt="lenovo" />
+                  <button class="button brands__button brands__display--ipad">
+                    <img src="./img/main/Bitmap-7.png" alt="acer" />
                   </button>
-                  <button class="button brands__button">
-                    <img src="./img/main/Bitmap-8.png" alt="lenovo" />
+                  <button class="button brands__button brands__display--ipad">
+                    <img src="./img/main/Bitmap-8.png" alt="sony" />
                   </button>
+
+                  <button class="button brands__button brands__display--none">
+                    <img src="./img/main/Bitmap-2.png" alt="lenovo" />
+                  </button>
+                  <button class="button brands__button brands__display--none">
+                    <img src="./img/main/Bitmap-3.png" alt="sumsung" />
+                  </button>
+                  <button class="button brands__button brands__display--none">
+                    <img src="./img/main/Bitmap-4.png" alt="apple" />
+                  </button>
+                  <button class="button brands__button brands__display--none">
+                    <img src="./img/main/Bitmap-5.png" alt="vs" />
+                  </button>
+
                 </div>
 
-                <button class="service__button button">
-                  <span class="button__name">Показать все</span>
+                <button type="button" class="service__button button button__brands">
+                  <img class="brands__img" src="./img/main/icon.svg" alt='arrow'>
+                  <span class="button__name brands__span">Показать все</span>
                 </button>
               </div>
+
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+          
+                  <div class="swiper-slide" >
+                    <button class="button brands__button">
+                      <img src="./img/main/Bitmap-2.png" alt="lenovo" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button brands__button">
+                      <img src="./img/main/Bitmap-3.png" alt="sumsung" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button brands__button">
+                      <img src="./img/main/Bitmap-4.png" alt="apple" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button brands__button">
+                      <img src="./img/main/Bitmap-5.png" alt="vs" />
+                    </button>
+                  </div>
+          
+                  <div class="swiper-slide" >
+                    <button class="button brands__button">
+                      <img src="./img/main/Bitmap.png" alt="bosch" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button brands__button">
+                      <img src="./img/main/Bitmap-6.png" alt="hp" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button brands__button">
+                      <img src="./img/main/Bitmap-7.png" alt="acer" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button brands__button">
+                      <img src="./img/main/Bitmap-8.png" alt="sony" />
+                    </button>
+                  </div>
+                  
+                </div>
+                <div class="swiper-pagination "></div>
+              </div>
+
             </article>
 
             <article class="service__container">
@@ -175,7 +241,7 @@
                 </div>
               </header>
 
-              <div class="container">
+              <div class="container container--display">
                 <div class="service__equipment equipment">
                   <button class="button equipment__button">
                     <span>Ремонт ноутбуков</span>
@@ -189,14 +255,80 @@
                     <span>Ремонт ПК</span>
                   </button>
 
-                  <button class="button equipment__button">
+                  <button class="button equipment__button equipment__display--ipad">
+                    <span>Ремонт мониторов</span>
+                  </button>
+
+                  <button class="button equipment__button equipment__display--none">
+                    <span>Ремонт ноутбуков</span>
+                  </button>
+
+                  <button class="button equipment__button equipment__display--none">
+                    <span>Ремонт планшетов</span>
+                  </button>
+
+                  <button class="button equipment__button equipment__display--none">
+                    <span>Ремонт ПК</span>
+                  </button>
+
+                  <button class="button equipment__button equipment__display--none">
                     <span>Ремонт мониторов</span>
                   </button>
                 </div>
 
-                <button class="service__button button">
-                  <span class="button__name">Показать все</span>
+                <button class="service__button button button__equipment">
+                  <img class="equipment__img" src="./img/main/icon.svg" alt='arrow'>
+                  <span class="button__name equipment__span">Показать все</span>
                 </button>
+              </div>
+
+              <div class="swiper-container swiper-container--height">
+                <div class="swiper-wrapper swiper-wrapper--position">
+          
+                  <div class="swiper-slide" >
+                    <button class="button equipment__button">
+                      <span>Ремонт ноутбуков</span>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button equipment__button">
+                      <span>Ремонт планшетов</span>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button equipment__button">
+                      <span>Ремонт ПК</span>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button equipment__button">
+                      <span>Ремонт мониторов</span>
+                    </button>
+                  </div>
+          
+                  <div class="swiper-slide" >
+                    <button class="button equipment__button">
+                      <span>Ремонт ноутбуков</span>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button equipment__button">
+                      <span>Ремонт планшетов</span>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button equipment__button">
+                      <span>Ремонт ПК</span>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="button equipment__button">
+                      <span>Ремонт мониторов</span>
+                    </button>
+                  </div>
+                  
+                </div>
+                <div class="swiper-pagination "></div>
               </div>
             </article>
 
@@ -220,6 +352,9 @@
           офертой
         </p>
       </footer>
-    </div>
+
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
