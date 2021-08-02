@@ -20,14 +20,14 @@ function hideButtonBrands() {
       buttonNameBrands.textContent = "Показать все";
       brandsImg.src = "./img/main/icon.svg";
       buttonHiddenIpad.forEach((button) => {
-        button.classList.remove("display--block");
+        button.classList.remove("display--flex");
       });
     } else {
       item.style.display = "flex";
       buttonNameBrands.textContent = "Скрыть";
       brandsImg.src = "./img/main/icon2.svg";
       buttonHiddenIpad.forEach((button) => {
-        button.classList.add("display--block");
+        button.classList.add("display--flex");
       });
     }
   });
