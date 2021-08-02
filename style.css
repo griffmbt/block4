@@ -422,6 +422,15 @@ a {
     display: none;
   }
 
+  .brands__button {
+    width: 200px;
+  }
+
+  .equipment__button {
+    width: 200px;
+    height: 140px;
+  }
+
   .swiper-container {
     display: block;
     width: 320px;
@@ -462,9 +471,8 @@ a {
     content: "";
     position: absolute;
     right: 0;
-
     top: 20px;
-    width: 20px;
+    width: 30px;
     height: 100px;
     background-color: #f8f8f8;
     filter: blur(10px);
