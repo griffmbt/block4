@@ -171,7 +171,7 @@ a {
   opacity: 0.6;
   transition-duration: 0.3s;
   transition-delay: 150ms;
-  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 .header__button--repair {
@@ -211,7 +211,7 @@ a {
   opacity: 0.6;
   transition-duration: 0.3s;
   transition-delay: 150ms;
-  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 .main__button--repair {
@@ -292,7 +292,7 @@ a {
   transform: scale(1.1);
   transition-duration: 0.3s;
   transition-delay: 150ms;
-  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 .button__name {
@@ -333,7 +333,7 @@ a {
   transform: scale(1.1);
   transition-duration: 0.3s;
   transition-delay: 150ms;
-  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 .service__brands {
@@ -372,7 +372,7 @@ a {
 .brands__button:hover {
   transform: scale(1.01);
   transition-duration: 0.3s;
-  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 .service__equipment {
@@ -390,7 +390,7 @@ a {
   padding: 16px;
   text-align: start;
   vertical-align: top;
-  
+
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 6px;
@@ -410,7 +410,6 @@ a {
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-
 .equipment__button span {
   position: relative;
   top: -58px;
@@ -422,7 +421,7 @@ a {
   transform: scale(1.03);
   transition-duration: 0.3s;
   transition-delay: 100ms;
-  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 .swiper-container,
@@ -433,6 +432,41 @@ a {
 
 .equipment__display--none {
   margin-top: 1rem;
+}
+
+
+.price__table {
+  border-collapse: collapse;
+}
+
+.price__row {
+  background-color: #fff;
+  border-bottom: ;
+}
+
+.price__table .price__row:first-child {
+  color: #7e7e82;
+  background-color: #f8f8f8;
+}
+
+.price__button {
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #ff3e79;
+}
+
+.price__button::after {
+  content: url(./img/main/dropdown.svg);
+  margin-left: 1rem;
+}
+
+.price__button span {
+  text-transform: uppercase;
+  font-family: "TT Lakes Medium";
+  font-size: 0.75rem;
+  color: #ffffff;
+  text-align: right;
 }
 
 @media screen and (max-width: 320px) {
