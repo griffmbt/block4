@@ -166,6 +166,14 @@ a {
   background: #ff3e79;
 }
 
+.header__button:hover {
+  transform: scale(1.03);
+  opacity: 0.6;
+  transition-duration: 0.3s;
+  transition-delay: 150ms;
+  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+}
+
 .header__button--repair {
   background-image: url("./img/header/repair.svg");
 }
@@ -196,6 +204,14 @@ a {
   font-size: 1rem;
   font-family: "TT Lakes Medium";
   background: none;
+}
+
+.main__button:hover {
+  transform: scale(1.01);
+  opacity: 0.6;
+  transition-duration: 0.3s;
+  transition-delay: 150ms;
+  transition-timing-function:cubic-bezier(1, 0, 0, 1);
 }
 
 .main__button--repair {
@@ -272,6 +288,13 @@ a {
   content: url(./img/main/icon.svg);
 }
 
+.content__button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  transition-delay: 150ms;
+  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+}
+
 .button__name {
   font-size: 1rem;
   margin-left: 1rem;
@@ -306,6 +329,13 @@ a {
   background-image: linear-gradient(to right, #f8f8f8 20%, #ffffff 70%);
 }
 
+.service__button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  transition-delay: 150ms;
+  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+}
+
 .service__brands {
   padding: 24px 0;
   display: flex;
@@ -332,6 +362,19 @@ a {
   content: url(./img/main/go.svg);
 }
 
+.brands__button:hover::after {
+  content: url(./img/main/go.svg);
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.brands__button:hover {
+  transform: scale(1.01);
+  transition-duration: 0.3s;
+  transition-timing-function:cubic-bezier(1, 0, 0, 1);
+}
+
 .service__equipment {
   padding-bottom: 24px;
   display: flex;
@@ -347,7 +390,7 @@ a {
   padding: 16px;
   text-align: start;
   vertical-align: top;
-
+  
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 6px;
@@ -360,9 +403,26 @@ a {
   bottom: 14px;
 }
 
+.equipment__button:hover::after {
+  content: url(./img/main/go.svg);
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
 .equipment__button span {
   position: relative;
   top: -58px;
+  font-family: "TT Lakes Medium";
+  font-size: 1rem;
+}
+
+.equipment__button:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
+  transition-delay: 100ms;
+  transition-timing-function:cubic-bezier(1, 0, 0, 1);
 }
 
 .swiper-container,
