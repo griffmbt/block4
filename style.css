@@ -364,15 +364,15 @@ a {
 
 .brands__button:hover::after {
   content: url(./img/main/go.svg);
-  transform: scale(1.1);
-  transition-duration: 0.5s;
+  transform: scale(1.05) translateX(-5px);
+  transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.brands__button:hover {
-  transform: scale(1.01);
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+.brands__button:hover img {
+  transform: translateX(5px);
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .service__equipment {
@@ -396,6 +396,12 @@ a {
   border-radius: 6px;
 }
 
+/* .equipment__button:hover {
+  transition-duration: 0.3s;
+  transition-delay: 100ms;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+} */
+
 .equipment__button::after {
   content: url(./img/main/go.svg);
   position: absolute;
@@ -405,8 +411,8 @@ a {
 
 .equipment__button:hover::after {
   content: url(./img/main/go.svg);
-  transform: scale(1.1);
-  transition-duration: 0.5s;
+  transform: scale(1.1) translateX(-8px);
+  transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -417,11 +423,11 @@ a {
   font-size: 1rem;
 }
 
-.equipment__button:hover {
-  transform: scale(1.03);
-  transition-duration: 0.3s;
-  transition-delay: 100ms;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+.equipment__button:hover span {
+  display: block;
+  transform: translateX(5px);
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .swiper-container,
@@ -485,9 +491,23 @@ a {
   background-color: #ff3e79;
 }
 
+.price__button:hover {
+  opacity: 0.8;
+  transition-delay: 150ms;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
 .price__button::after {
   content: url(./img/main/dropdown.svg);
   margin-left: 1rem;
+}
+
+.price__button:hover::after {
+  margin-left: 0.5rem;
+  transition-delay: 150ms;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 .price__button span {
@@ -516,11 +536,19 @@ a {
 .endnote__button::after {
   content: url(./img/main/endnote.svg);
 }
+
 .endnote__button:hover {
   opacity: 0.8;
   transform: scale(1.02);
   transition-delay: 150ms;
   transition-timing-function: ease-in-out;
+}
+
+.endnote__button:hover::after {
+  margin-left: 0.5rem;
+  transition-delay: 150ms;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 .footer--flex {
@@ -681,6 +709,19 @@ a {
 
   .service__container:last-child .swiper-container {
     height: 270px;
+  }
+
+  .price__swiper-container::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 50px;
+    height: 200px;
+    background-color: #f8f8f8;
+    filter: blur(8px);
+    z-index: 2;
+    transform: translateX(25px);
   }
 
   .swiper__content {
