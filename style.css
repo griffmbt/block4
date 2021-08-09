@@ -110,8 +110,7 @@ a {
 
 .header__button--call,
 .header__button--chat,
-.header__button--profile,
-.content__text:nth-child(2) {
+.header__button--profile {
   display: none;
 }
 
@@ -280,12 +279,17 @@ a {
   font-size: 0.875rem;
 }
 
-.content__button {
-  margin: 0 0 24px 8px;
+.content__320,
+.content__768 {
+  display: inline;
 }
 
-.content__button::before {
-  content: url(./img/main/icon.svg);
+.content__text--hidden {
+  display: none;
+}
+
+.content__button {
+  margin: 0 0 24px 8px;
 }
 
 .content__button:hover {
@@ -582,9 +586,7 @@ a {
   }
 
   .main__buttons,
-  .header__left .header__hr,
-  .content__text:nth-child(2),
-  .content__text:nth-child(3) {
+  .header__left .header__hr {
     display: none;
   }
 
@@ -613,6 +615,11 @@ a {
   .content--flex {
     width: 100%;
     display: block;
+  }
+
+  .content__320,
+  .content__768 {
+    display: none;
   }
 
   .container--display {
@@ -802,13 +809,11 @@ a {
   .header__block,
   .header__button--call,
   .header__button--chat,
-  .header__button--profile,
-  .content__text:nth-child(2) {
+  .header__button--profile {
     display: block;
   }
 
-  .main__buttons,
-  .content__text:nth-child(3) {
+  .main__buttons {
     display: none;
   }
 
@@ -835,6 +840,13 @@ a {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+  }
+
+  .content__768 {
+    display: none;
+  }
+  .content__320 {
+    display: inline;
   }
 
   .nav--flex {
