@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="style_modal.css" />
 
     <title>block4</title>
   </head>
@@ -128,7 +129,11 @@
               </p>
 
               <button class="content__button button">
-                <img class="content__button-img" src="./img/main/icon.svg" alt="arrow" />
+                <img
+                  class="content__button-img"
+                  src="./img/main/icon.svg"
+                  alt="arrow"
+                />
                 <span class="button__name">Читать далее</span>
               </button>
             </div>
@@ -589,6 +594,58 @@
         </p>
       </footer>
     </div>
+
+    <div class="modal modal--style">
+      <a href="#" class="modal__close"></a>
+      <div class="modal__body">
+        <div class="modal__content">
+          <h4 class="modal__title">Обратная связь</h4>
+          <form class="modal__form" action="">
+            <input
+              class="modal__input"
+              type="text"
+              name="name"
+              placeholder="Имя"
+            />
+            <input
+              class="modal__input"
+              type="text"
+              name="tel"
+              placeholder="Телефон"
+            />
+            <input
+              class="modal__input"
+              type="text"
+              name="email"
+              placeholder="Электронная почта"
+            />
+            <textarea
+              class="modal__textarea"
+              name="comment"
+              placeholder="Сообщение"
+            ></textarea>
+
+            <p class="modal__text">
+              Нажимая “отправить”, вы даете согласие на
+              <a href="#" class="modal__user-agreement"
+                >обработку персональных данных</a
+              >
+              и соглашаетесь с нашей
+              <a href="#" class="modal__user-agreement"
+                >политикой конфиденциальности</a
+              >
+            </p>
+
+            <div class="modal__button-box">
+              <button type="submit" class="modal__button button">
+                <span> отправить </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
