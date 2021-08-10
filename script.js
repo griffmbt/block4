@@ -109,6 +109,7 @@ function hiddenItemIpad() {
     });
     contentText320.style.display = "inline";
     contentText768.style.display = "none";
+    aside.classList.add('not-visible');
   }
   if (window.innerWidth > 768) {
     equipmentItemIpad.classList.remove("equipment__display--none");
@@ -117,10 +118,12 @@ function hiddenItemIpad() {
     });
     contentText320.style.display = "inline";
     contentText768.style.display = "inline";
+    aside.classList.remove('not-visible');
   }
   if (window.innerWidth <= 320) {
     contentText320.style.display = "none";
     contentText768.style.display = "none";
+    aside.classList.add('not-visible');
   }
 }
 
