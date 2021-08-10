@@ -1,5 +1,19 @@
+.not-visible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 .aside {
-  width: 320px;
+  margin-left: auto;
+}
+
+.page__aside {
+  min-width: 300px;
   height: 100%;
   font-family: "TT Lakes Medium";
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
@@ -7,6 +21,7 @@
   background-color: #ffffff;
   border-bottom: 1px solid white;
 }
+
 
 .menu__container {
   margin: 0 auto;
@@ -28,6 +43,7 @@
 
 .button--burger-close {
   background-image: url("./img/menu/burger-close.svg");
+  display: none;
 }
 
 .button--search {
@@ -132,4 +148,57 @@
 .button--profile:hover,
 .header__logo:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.842);
+  }
+
+  .page__aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+  }
+  
+  .button--burger-close {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* .aside {
+    display: none;
+  } */
+
+  .aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.842);
+  }
+
+  .page__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .button--burger-close {
+    display: block;
+  }
 }

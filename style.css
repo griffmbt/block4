@@ -37,6 +37,12 @@ a {
   text-decoration: none;
 }
 
+.page {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
 .display-none {
   display: none;
 }
@@ -46,8 +52,8 @@ a {
   color: #7e7e82;
 }
 
-.page4 {
-  margin: 0 auto;
+.page__general {
+  margin-right: auto;
   padding: 42px 0 0 0;
   max-width: 1120px;
   background-color: #f8f8f8;
@@ -581,8 +587,9 @@ a {
     display: block;
   }
 
-  .page4 {
+  .page__general {
     padding-top: 0;
+    max-width: 320px;
   }
 
   .main__buttons,
@@ -795,8 +802,9 @@ a {
 }
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
-  .page4 {
+  .page__general {
     padding-top: 0;
+    max-width: 768px;
   }
 
   .container,

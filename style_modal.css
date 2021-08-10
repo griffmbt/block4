@@ -1,10 +1,39 @@
+.not-visibile {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visibile {
+  visibility: visibility;
+  opacity: 1;
+}
+
 .modal--style {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.863);
+  background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   right: 0;
+}
+
+.modal__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal__close {
+  position: absolute;
+  top: 35px;
+  right: 470px;
+  z-index: 10;
+}
+
+.modal__close::after {
+  content: url(./img/header/close.svg);
 }
 
 .modal__body {
@@ -70,6 +99,7 @@
 
 .modal__text {
   margin-bottom: 1.5rem;
+  font-family: "TT Lakes Regular";
   font-size: 0.75rem;
 }
 
@@ -114,3 +144,11 @@
 .modal__button-box {
   text-align: end;
 }
+
+/* @media screen and (max-width: 768px) and (min-width: 321px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+} */
